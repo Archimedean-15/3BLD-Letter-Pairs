@@ -119,7 +119,10 @@ if gamemode.lower() == "memorize":
 
 elif gamemode.lower() == "infinite":
 
+    letter = input("Enter the letter category you want to practice (\"all\" for all letter pairs): ")
     letter_pairs = list(letter_pairs_dict.keys())
+    if letter != "all":
+        letter_pairs = list([pair for pair in letter_pairs if pair[0] == letter.upper()])
 
     while True:
         pair = random.choice(letter_pairs)
