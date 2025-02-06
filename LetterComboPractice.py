@@ -3,7 +3,7 @@ import time
 
 
 letter_pairs_dict = {
-    "AB": "Abs", "AC": "AC", "AD": "Ad", "AE": "Algae", "AF": "Afro", "AG": "Alligator", "AH": "Anchor", "AI": "AI", 
+    "AB": "Abs", "AC": "AC", "AD": "Ad", "AE": "Algae", "AF": "Afro", "AG": "Alligator", "AH": "Albert Heijn", "AI": "AI", 
     "AJ": "Apple Juice", "AK": "Ark", "AL": "Alabama", "AM": "Arm", "AN": "Ant", "AO": "Aioli", "AP": "Ape", "ACH": "Ache", 
     "AR": "Arab", "AS": "Ass", "AT": "Art", "AU": "Australia", "AV": "Avenue", "AW": "Awning", "ASH": "Ash", "BA": "Bar", 
     "BC": "B.C.E.", "BD": "Bed", "BE": "Bee", "BF": "Boyfriend", "BG": "Bug", "BH": "Bahamas", "BI": "Bike", "BJ": "...y'know", 
@@ -11,7 +11,7 @@ letter_pairs_dict = {
     "BR": "Bro", "BS": "Bullsh*t", "BT": "Bat (animal)", "BU": "Bus", "BV": "Beaver", "BW": "Bow", "BSH": "Bush", "CA": "California", 
     "CB": "Cab", "CD": "Cody", "CE": "Cereal", "CF": "Calf", "CG": "Cog", "CH": "Chris (from MrBeast)", "CI": "City", "CJ": "CJya", 
     "CK": "Cock (animal)", "CL": "Cleopatrea", "CM": "Cum", "CN": "Can", "CO": "Coca Cola", "CP": "Checkpoint", "CCH": "C**ch", 
-    "CR": "Crow", "CS": "Ceaser Salad", "CT": "Cat", "CU": "C U (waving)", "CV": "Cava", "CW": "Cow", "CSH": "Cash", "DA": "Dagger", 
+    "CR": "Crow", "CS": "Ceaser", "CT": "Cat", "CU": "C U (waving)", "CV": "Cava", "CW": "Cow", "CSH": "Cash", "DA": "Dagger", 
     "DB": "Dab", "DC": "D*ck", "DE": "Dee Dee (from UCN)", "DF": "Daffodil", "DG": "Dungeon", "DH": "Dhow", "DI": "Diddy", 
     "DJ": "DJ Khaled", "DK": "Donkey Kong", "DL": "Doll", "DM": "Deutsch Mark", "DN": "Daniel", "DO": "Dodo Bird", "DP": "Dude Perfect", 
     "DCH": "Dutch", "DR": "Door", "DS": "Nintendo DS", "DT": "Derilium Trigger", "DU": "Duck", "DV": "Dove", "DW": "Dwarf", "DSH": "Dish", 
