@@ -17,15 +17,15 @@ letter_pairs_dict = {
     "DCH": "Dutch", "DR": "Door", "DS": "Nintendo DS", "DT": "Derilium Trigger", "DU": "Duck", "DV": "Dove", "DW": "Dwarf", "DSH": "Dish", 
     "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Elf", "EG": "Egg", "EH": "Earth", "EI": "Eli (from camp)", 
     "EJ": "Ejaculate", "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch", 
-    "ER": "ER", "ES": "Essay", "ET": "ET", "EU": "Europe", "EV": "Environment", "EW": "Elbow", "ESH": "Eyelash", "FA": "Fat", "FB": "Football", 
+    "ER": "ER", "ES": "Essay", "ET": "ET", "EU": "Europe", "EV": "Environment", "EW": "Ew!", "ESH": "Eyelash", "FA": "Fat", "FB": "Football", 
     "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "F*g", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "...uhhhh", "FK": "F**k", 
-    "FL": "Flower", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Fir", "FS": "Fossil", 
+    "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Fir", "FS": "Fossil", 
     "FT": "Foot", "FU": "F U (flipping off)", "FV": "Five", "FW": "Flow (haircut)", "FSH": "Fish", "GA": "Gag", "GB": "Garbage", 
-    "GC": "Gotham Chess", "GD": "Geometry Dash", "GE": "Gee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Goji Berry", 
+    "GC": "Gotham Chess", "GD": "Geometry Dash", "GE": "Gee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Gojo", 
     "GK": "Goku", "GL": "Goal", "GM": "Gem", "GN": "Good Night", "GO": "GoGo Squeez", "GP": "Ground Pound", "GCH": "Gucci", "GR": "Grow", 
     "GS": "Gas", "GT": "Goat", "GU": "Gukesh D.", "GV": "Guava", "GW": "Gwen Stefani", "GSH": "Goulash", "HA": "Hair", "HB": "Hamburger", 
     "HC": "Helicopter", "HD": "Head", "HE": "He", "HF": "High Five", "HG": "Hug", "HI": "HI-C", "HJ": "High Jump", "HK": "Hong Kong", 
-    "HL": "Hell", "HM": "Ham", "HN": "Hen", "HO": "Hippo", "HP": "Harp", "HCH": "Hi-Chew", "HR": "Hriday", "HS": "Highschool", 
+    "HL": "Hell", "HM": "Ham", "HN": "Hen", "HO": "Hippo", "HP": "Health Points", "HCH": "Hi-Chew", "HR": "Hriday", "HS": "Highschool", 
     "HT": "Hat", "HU": "Hunter", "HV": "Heaven", "HW": "Homework", "HSH": "Hashbrowns", "IA": "Ian", "IB": "Iceberg", "IC": "Ice", 
     "ID": "ID", "IE": "Ire", "IF": "IFly", "IG": "Igloo", "IH": "IHOP", "IJ": "Ijsje", "IK": "IKEA", "IL": "Island", "IM": "IM Eric Rosen", 
     "IN": "Inn", "IO": "Slither.io", "IP": "Ipad", "ICH": "Itch", "IR": "Iron", "IS": "Ice Spice", "IT": "IT", "IU": "Shiba Inu", 
@@ -34,7 +34,7 @@ letter_pairs_dict = {
     "JM": "Jam", "JN": "Jane Norris", "JO": "Jojo Siwa", "JP": "Japan", "JCH": "Judge", "JR": "Jar", "JS": "Jesus", "JT": "Jet", 
     "JU": "Jiu Jitsu", "JV": "Javelin", "JW": "Jewel", "JSH": "Joshua Lin",
     "KA": "Kat", "KB": "Keyboard", "KC": "Kody Choi", "KD": "Kid", "KE": "Key", "KF": "KFC", 
-    "KG": "Keagan", "KH": "Khakis", "KI": "Kite", "KJ": "Kim Jeong Un", "KL": "Kill", "KM": "Mr. Kim", 
+    "KG": "Keagan", "KH": "Khakis", "KI": "Kite", "KJ": "Kim Jeong Un", "KL": "Kill", "KM": "Kam", 
     "KN": "Ken (Barbie)", "KO": "Koala", "KP": "Katy Perry", "KCH": "Ketchup", "KR": "Kristian", 
     "KS": "Kiss", "KT": "Katana", "KU": "Kung Fu", "KV": "Kyiv", "KW": "Kiwi (fruit)", "KSH": "Kashmir", 
     "LA": "Los Angeles", "LB": "Laboratory", "LC": "Lice", "LD": "Ladder", "LE": "Lemon", "LF": "Loaf", 
@@ -67,7 +67,7 @@ letter_pairs_dict = {
     "SI": "Sign", "SJ": "Shell jump", "SK": "Ski", "SL": "Seal", "SM": "S'mores", "SN": "Sun", "SO": "Square-One", 
     "SP": "Sapnap", "SCH": "Sasquatch", "SR": "Sir", "ST": "Santa", "SU": "SIUUUU", "SV": "Sieve", "SW": "Subway (food)", 
     "SSH": "Sushi", "TA": "Tab", "TB": "Telletubbies", "TC": "Tack", "TD": "Toad (mario)", "TE": "Tee", "TF": "Team Fortress", 
-    "TG": "Tigger", "TH": "Thigh", "TI": "Tiger", "TJ": "Trump jump", "TK": "Turkey", "TL": "Tall", "TM": "Team", 
+    "TG": "Tigger", "TH": "Theo", "TI": "Tiger", "TJ": "Trump jump", "TK": "Turkey", "TL": "Tall", "TM": "Team", 
     "TN": "Teen", "TO": "Tomato", "TP": "Toilet Paper", "TCH": "Teacher", "TR": "Tour", "TS": "Taser", "TU": "Tutu", 
     "TV": "TV", "TW": "Towel", "TSH": "Tasche", "UA": "Ursa", "UB": "Uber", "UC": "Unc. Wyatt", "UD": "Udder", 
     "UE": "Ube", "UF": "UFO", "UG": "Uggs", "UH": "U-Haul", "UI": "Uighur", "UJ": "Mt. Fuji", "UK": "UK", 
@@ -108,7 +108,7 @@ if gamemode.lower() == "memorize":
 
     score = number_of_letter_pairs
     for i in range(number_of_letter_pairs):
-        user_input = input("Letter pair: ")
+        user_input = input("Letter pair: ").upper()
         if user_input != answer[i]:
             print(f"You failed! It was {answer[i]}")
             score -= 1
