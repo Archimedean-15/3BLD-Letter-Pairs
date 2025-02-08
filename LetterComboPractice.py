@@ -121,8 +121,17 @@ elif gamemode.lower() == "infinite":
 
     letter = input("Enter the letter category you want to practice (\"all\" for all letter pairs): ")
     letter_pairs = list(letter_pairs_dict.keys())
+
     if letter != "all":
-        letter_pairs = list([pair for pair in letter_pairs if pair[0] == letter.upper()])
+
+        new = []
+        for pair in letter_pairs:
+            if len(letter) == 1 and pair[0] == letter.upper() and (len(pair) == 2 or (len(pair) > 2 and pair[1] != "H")):
+                new.append(pair)
+            elif len(letter) == 2 and pair[:2] == letter.upper() and len(pair) > 2:
+                new.append(pair)
+        
+        letter_pairs = new
 
     while True:
         pair = random.choice(letter_pairs)
