@@ -12,7 +12,7 @@ letter_pairs_dict = {
     "CB": "Cab", "CD": "CD", "CE": "Cereal", "CF": "Calf", "CG": "Cog", "CH": "Chris (from MrBeast)", "CI": "City", "CJ": "CJya", 
     "CK": "Cock", "CL": "Call", "CM": "Cum", "CN": "Can", "CO": "Coca Cola", "CP": "Checkpoint", "CCH": "Cooch", 
     "CR": "Car", "CS": "Caesar", "CT": "Cat", "CU": "C U (waving)", "CV": "Cava", "CW": "Cow", "CSH": "Cash", "DA": "Daddy", 
-    "DB": "Dab", "DC": "Dick", "DE": "Dee Dee (from UCN)", "DF": "Daffodil", "DG": "Dog", "DH": "Dhar Mann", "DI": "Diddy", 
+    "DB": "Dab", "DC": "Washington DC", "DE": "Dee Dee (from UCN)", "DF": "Daffodil", "DG": "Dog", "DH": "Dhar Mann", "DI": "Diddy", 
     "DJ": "DJ", "DK": "Donkey Kong", "DL": "Doll", "DM": "Dam", "DN": "Daniel", "DO": "Dodo Bird", "DP": "Dude Perfect", 
     "DCH": "Dutch", "DR": "Door", "DS": "Nintendo DS", "DT": "Dot", "DU": "Duck", "DV": "Dove", "DW": "Dwarf", "DSH": "Dish", 
     "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Elf", "EG": "Egg", "EH": "Earth", "EI": "Ein Ei", 
