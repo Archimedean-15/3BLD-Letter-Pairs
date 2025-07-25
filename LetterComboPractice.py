@@ -19,7 +19,7 @@ letter_pairs_dict = {
     "EJ": "Ejaculate", "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch", 
     "ER": "ER", "ES": "Essay", "ET": "E.T.", "EU": "Europe", "EV": "Environment", "EW": "Ew!", "ESH": "Eshaan", "FA": "Fanta", "FB": "Facebook", 
     "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fag", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob", "FK": "Fuck", 
-    "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Fir", "FS": "Fossil", 
+    "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Frog", "FS": "Fossil", 
     "FT": "Foot", "FU": "F U (flipping off)", "FV": "Five", "FW": "Flow (haircut)", "FSH": "Fish", "GA": "Gag", "GB": "Garbage", 
     "GC": "Group Chat", "GD": "Geometry Dash", "GE": "Ghee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Gojo", 
     "GK": "Goku", "GL": "Goal", "GM": "Gem", "GN": "Good Night", "GO": "GoGo Squeez", "GP": "Ground Pound", "GCH": "Gucci", "GR": "Grow", 
