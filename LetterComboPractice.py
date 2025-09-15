@@ -82,7 +82,7 @@ letter_pairs_dict = {
     "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat", "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She", 
     "SHF": "Sherrif", "SHG": "Shaggy", "SHH": "Shah", "SHI": "Shiny", "SHJ": "Shoji", "SHK": "Shakira", "SHL": "Shell", 
     "SHM": "Shamrock", "SHN": "Shin", "SHO": "Show", "SHP": "Sheep", "SHCH": "Schach", "SHR": "Shore", 
-    "SHS": "Schlüssel", "SHT": "Shit", "SHU": "Shoe", "SHV": "Shovel", "SHW": "Shower"
+    "SHS": "Schlüssel", "SHT": "Shit", "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
 }
 
 unknown = []
