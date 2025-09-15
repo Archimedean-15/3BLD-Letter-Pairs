@@ -4,7 +4,7 @@ import time
 
 letter_pairs_dict = {
     "AB": "Abs", "AC": "AC", "AD": "Ad", "AE": "Algae", "AF": "Afro", "AG": "Alligator", "AH": "Albert Heijn", "AI": "AI", 
-    "AJ": "AJ (& Big Justice)", "AK": "Ark", "AL": "Alabama", "AM": "Arm", "AN": "Ant", "AO": "Aioli", "AP": "Ape", "ACH": "Ache", 
+    "AJ": "AJ (& Big Justice)", "AK": "Ark", "AL": "Alabama", "AM": "AM (morning)", "AN": "Ant", "AO": "Aioli", "AP": "Ape", "ACH": "Ache",
     "AR": "Arab", "AS": "Ass", "AT": "Art", "AU": "Australia", "AV": "Avenue", "AW": "Awning", "ASH": "Ash", "BA": "Banana", 
     "BC": "B.C.E.", "BD": "Bed", "BE": "Bee", "BF": "Boyfriend", "BG": "Bug", "BH": "Bahamas", "BI": "Bike", "BJ": "Blowjob", 
     "BK": "Burger King", "BL": "Ball", "BM": "Bomb", "BN": "Bin", "BO": "Boba", "BP": "Backpack", "BCH": "Bitch", 
