@@ -18,7 +18,7 @@ letter_pairs_dict = {
     "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Elf", "EG": "Egg", "EH": "Earth", "EI": "Ein Ei", 
     "EJ": "Ejaculate" + "\n"*50, "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch",
     "ER": "ER", "ES": "Essay", "ET": "E.T.", "EU": "Europe", "EV": "Environment", "EW": "Ew!", "ESH": "Eshaan", "FA": "Fanta", "FB": "Facebook", 
-    "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fog", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob", "FK": "Fuck", 
+    "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fog", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob" + "\n"*50, "FK": "Fuck" + "\n"*50,
     "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Frog", "FS": "Fossil", 
     "FT": "Foot", "FU": "F U (flipping off)", "FV": "Five", "FW": "Flow (haircut)", "FSH": "Fish", "GA": "Gag", "GB": "Great Britain", 
     "GC": "Group Chat", "GD": "Geometry Dash", "GE": "Ghee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Gojo", 
