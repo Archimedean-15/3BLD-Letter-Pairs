@@ -48,7 +48,7 @@ letter_pairs_dict = {
     "NE": "Knee", "NF": "Nerf Gun", "NG": "Nugget", "NH": "Niall Horan", "NI": "Nigeria", "NJ": "Ninja", 
     "NK": "North Korea", "NL": "Netherlands", "NM": "Nemo", "NO": "No", "NP": "Nap", "NCH": "Notch", "NR": "Nurse", 
     "NS": "Nose", "NT": "Net", "NU": "Nut", "NV": "Nevada", "NW": "Narwhal", "NSH": "Nashville Hot Chicken", 
-    "OA": "Oasis", "OB": "Obama", "OC": "Orange Chicken", "OD": "Odie", "OE": "Oboe", "OF": "Onlyfans", "OG": "Ogre", 
+    "OA": "Oasis", "OB": "Obama", "OC": "Orange Chicken", "OD": "Odie", "OE": "Oboe", "OF": "Onlyfans" + "\n"*50, "OG": "Ogre",
     "OH": "One-handed", "OI": "Oil", "OJ": "Orange Juice", "OK": "Oak", "OL": "Old", "OM": "Om nom nom", 
     "ON": "Onion", "OP": "Overpowered", "OCH": "Ostrich", "OR": "Oregon", "OS": "Operating System", "OT": "Oats", 
     "OU": "Outlet", "OV": "Olive", "OW": "Ow!", "OSH": "Ocean", "PA": "Pat", "PB": "Peanut Butter", 
@@ -73,16 +73,16 @@ letter_pairs_dict = {
     "UE": "Ube", "UF": "UFO", "UG": "Uggs", "UH": "U-Haul", "UI": "User Interface", "UJ": "Mt. Fuji", "UK": "UK", 
     "UL": "Umbrella", "UM": "Team oomi zoomi", "UN": "Unicorn", "UO": "Uno", "UP": "UPS", "UCH": "Urchin", "UR": "Urn", 
     "US": "US", "UT": "Unit (jacked)", "UV": "UV sunglasses", "UW": "UW", "USH": "Usher", "VA": "Van", "VB": "Volleyball", 
-    "VC": "Voicechat", "VD": "Video", "VE": "Veradee", "VF": "Venus Flytrap", "VG": "Viagra", "VH": "VHS", "VI": "Vi", 
+    "VC": "Voicechat", "VD": "Video", "VE": "Veradee", "VF": "Venus Flytrap", "VG": "Viagra" + "\n"*50, "VH": "VHS", "VI": "Vi",
     "VJ": "Vidit Gujarathi", "VK": "Viking", "VL": "Vladimir Putin", "VM": "Venom", "VN": "Ms. Vincent", "VO": "Volcano", 
     "VP": "Viper", "VCH": "Voucher", "VR": "VR", "VS": "Vase", "VT": "Vulture", "VU": "Vacuum", "VW": "Volkswagen", 
     "VSH": "Viking ship", "WA": "Washington", "WB": "Web", "WC": "WC", "WD": "Wood", "WE": "We", "WF": "Wife", 
     "WG": "Wagon", "WH": "Whale", "WI": "Wii", "WJ": "Woojin", "WK": "Wok", "WL": "Well", "WM": "Women", 
     "WN": "Wonton", "WO": "Wolf", "WP": "Whip", "WCH": "Witch", "WR": "War", "WS": "Wasp", "WT": "Wet", "WU": "Empress Wu", 
-    "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat", "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She", 
+    "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat" + "\n"*50, "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She",
     "SHF": "Sherrif", "SHG": "Shaggy", "SHH": "Shah", "SHI": "Shiny", "SHJ": "Shoji", "SHK": "Shakira", "SHL": "Shell", 
     "SHM": "Shamrock", "SHN": "Shin", "SHO": "Show", "SHP": "Sheep", "SHCH": "Schach", "SHR": "Shore", 
-    "SHS": "Schlüssel", "SHT": "Shit", "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
+    "SHS": "Schlüssel", "SHT": "Shit" + "\n"*50, "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
 }
 
 unknown = []
@@ -119,20 +119,40 @@ if gamemode.lower() == "memorize":
 
 elif gamemode.lower() == "infinite":
 
-    letter = input("Enter the letter category you want to practice (\"all\" for all letter pairs): ")
+    print("Enter the letter category you want to practice.")
+    print("Enter \"all\" for all letter pairs")
+    print("Use the format [starting letter]-[ending letter] for a range.")
+    print("Separate letters by commas to select individual letter categories (e.g. b,e,m,ch).")
+    letter_selection = input()
     letter_pairs = list(letter_pairs_dict.keys())
 
-    if letter != "all":
+    new = []
+    letters = []
 
-        new = []
+    if "-" in letter_selection:
+        dash_index = letter_selection.index("-")
+        starting_letter_uni: int = ord(letter_selection[dash_index - 1])
+        ending_letter_uni: int = ord(letter_selection[dash_index + 1])
+
+        for letter_uni in range(starting_letter_uni, ending_letter_uni + 1):
+            letters.append(chr(letter_uni))
+
+    elif "," in letter_selection:
+        letters = letter_selection.split(",")
+
+    else:
+        starting_letter_uni, ending_letter_uni = ord(letter_selection), ord(letter_selection)
+
+    for letter in letters:
         for pair in letter_pairs:
             if len(letter) == 1 and pair[0] == letter.upper() and (len(pair) == 2 or (len(pair) > 2 and pair[1] != "H")):
                 new.append(pair)
             elif len(letter) == 2 and pair[:2] == letter.upper() and len(pair) > 2:
                 new.append(pair)
         
-        letter_pairs = new
+    letter_pairs = new
 
+    print(letter_pairs)
     while True:
         pair = random.choice(letter_pairs)
         word = letter_pairs_dict.get(pair).lower()
