@@ -5,26 +5,26 @@ import time
 letter_pairs_dict = {
     "AB": "Abs", "AC": "AC", "AD": "Ad", "AE": "Algae", "AF": "Afro", "AG": "Alligator", "AH": "Albert Heijn", "AI": "AI", 
     "AJ": "AJ (& Big Justice)", "AK": "Ark", "AL": "Alabama", "AM": "AM (morning)", "AN": "Ant", "AO": "Aioli", "AP": "Ape", "ACH": "Ache",
-    "AR": "Arab", "AS": "Ass" + "\n"*50, "AT": "Art", "AU": "Australia", "AV": "Avenue", "AW": "Awning", "ASH": "Ash", "BA": "Banana",
-    "BC": "B.C.E.", "BD": "Bed", "BE": "Bee", "BF": "Boyfriend", "BG": "Bug", "BH": "Bahamas", "BI": "Bike", "BJ": "Blowjob" + "\n"*50,
-    "BK": "Burger King", "BL": "Ball", "BM": "Bomb", "BN": "Bin", "BO": "Boba", "BP": "Backpack", "BCH": "Bitch" + "\n"*50,
-    "BR": "Baskin Robbins", "BS": "Bullshit" + "\n"*50, "BT": "Bat", "BU": "Bus", "BV": "Beaver", "BW": "Bow", "BSH": "Bush", "CA": "California",
+    "AR": "Arab", "AS": "Ass", "AT": "Art", "AU": "Australia", "AV": "Avenue", "AW": "Awning", "ASH": "Ash", "BA": "Banana",
+    "BC": "B.C.E.", "BD": "Bed", "BE": "Bee", "BF": "Boyfriend", "BG": "Bug", "BH": "Bahamas", "BI": "Bike", "BJ": "Blowjob",
+    "BK": "Burger King", "BL": "Ball", "BM": "Bomb", "BN": "Bin", "BO": "Boba", "BP": "Backpack", "BCH": "Bitch",
+    "BR": "Baskin Robbins", "BS": "Bullshit", "BT": "Bat", "BU": "Bus", "BV": "Beaver", "BW": "Bow", "BSH": "Bush", "CA": "California",
     "CB": "Cab", "CD": "CD", "CE": "Cereal", "CF": "Calf", "CG": "Cog", "CH": "Chris (from MrBeast)", "CI": "City", "CJ": "CJya", 
-    "CK": "Cock" + "\n"*50, "CL": "Call", "CM": "Cum" + "\n"*50, "CN": "Can", "CO": "Coca Cola", "CP": "Checkpoint", "CCH": "Cooch" + "\n"*50,
+    "CK": "Cock", "CL": "Call", "CM": "Cum", "CN": "Can", "CO": "Coca Cola", "CP": "Checkpoint", "CCH": "Cooch",
     "CR": "Car", "CS": "Caesar", "CT": "Cat", "CU": "C U (waving)", "CV": "Cava", "CW": "Cow", "CSH": "Cash", "DA": "Daddy", 
     "DB": "Dab", "DC": "Washington DC", "DE": "Dee Dee (from UCN)", "DF": "Daffodil", "DG": "Dog", "DH": "Dhar Mann", "DI": "Diddy", 
     "DJ": "DJ", "DK": "Donkey Kong", "DL": "Doll", "DM": "Dam", "DN": "Daniel", "DO": "Dodo Bird", "DP": "Dude Perfect", 
     "DCH": "Dutch", "DR": "Door", "DS": "Nintendo DS", "DT": "Dot", "DU": "Duck", "DV": "Dove", "DW": "Dwarf", "DSH": "Dish", 
     "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Elf", "EG": "Egg", "EH": "Earth", "EI": "Ein Ei", 
-    "EJ": "Ejaculate" + "\n"*50, "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch",
+    "EJ": "Ejaculate", "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch",
     "ER": "ER", "ES": "Essay", "ET": "E.T.", "EU": "Europe", "EV": "Environment", "EW": "Ew!", "ESH": "Eshaan", "FA": "Fanta", "FB": "Facebook", 
-    "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fog", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob" + "\n"*50, "FK": "Fuck" + "\n"*50,
-    "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap" + "\n"*50, "FCH": "Finch", "FR": "Frog", "FS": "Fossil",
+    "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fog", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob", "FK": "Fuck",
+    "FL": "Florida", "FM": "Foam", "FN": "Fan", "FO": "Fortune Cookie", "FP": "Fap", "FCH": "Finch", "FR": "Frog", "FS": "Fossil",
     "FT": "Foot", "FU": "F U (flipping off)", "FV": "Five", "FW": "Flow (haircut)", "FSH": "Fish", "GA": "Gag", "GB": "Great Britain", 
     "GC": "Group Chat", "GD": "Geometry Dash", "GE": "Ghee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Gojo", 
     "GK": "Goku", "GL": "Goal", "GM": "Gem", "GN": "Good Night", "GO": "GoGo Squeez", "GP": "Ground Pound", "GCH": "Gucci", "GR": "Grow", 
     "GS": "Goose", "GT": "Goat", "GU": "Gukesh D.", "GV": "Guava", "GW": "Gwen Stefani", "GSH": "Goulash", "HA": "Ha ha (laughing)", "HB": "Hamburger", 
-    "HC": "Hi-C", "HD": "Head", "HE": "Heel", "HF": "High Five", "HG": "Hug", "HI": "Hi", "HJ": "High Jump", "HK": "Hawk Tuah" + "\n"*50,
+    "HC": "Hi-C", "HD": "Head", "HE": "Heel", "HF": "High Five", "HG": "Hug", "HI": "Hi", "HJ": "High Jump", "HK": "Hawk Tuah",
     "HL": "Hell", "HM": "Ham", "HN": "Hen", "HO": "Hippo", "HP": "Health Points", "HCH": "Hi-Chew", "HR": "Hriday", "HS": "Highschool", 
     "HT": "Hat", "HU": "Huzz", "HV": "Heaven", "HW": "Homework", "HSH": "Hashbrowns", "IA": "Ian", "IB": "Iceberg", "IC": "Ice", 
     "ID": "ID", "IE": "Ireland", "IF": "IFly", "IG": "Instagram", "IH": "IHOP", "IJ": "Ijsje", "IK": "IKEA", "IL": "Ill", "IM": "IM Levy Rozman", 
@@ -48,7 +48,7 @@ letter_pairs_dict = {
     "NE": "Knee", "NF": "Nerf Gun", "NG": "Nugget", "NH": "Niall Horan", "NI": "Nigeria", "NJ": "Ninja", 
     "NK": "North Korea", "NL": "Netherlands", "NM": "Nemo", "NO": "No", "NP": "Nap", "NCH": "Notch", "NR": "Nurse", 
     "NS": "Nose", "NT": "Net", "NU": "Nut", "NV": "Nevada", "NW": "Narwhal", "NSH": "Nashville Hot Chicken", 
-    "OA": "Oasis", "OB": "Obama", "OC": "Orange Chicken", "OD": "Odie", "OE": "Oboe", "OF": "Onlyfans" + "\n"*50, "OG": "Ogre",
+    "OA": "Oasis", "OB": "Obama", "OC": "Orange Chicken", "OD": "Odie", "OE": "Oboe", "OF": "Onlyfans", "OG": "Ogre",
     "OH": "One-handed", "OI": "Oil", "OJ": "Orange Juice", "OK": "Oak", "OL": "Old", "OM": "Om nom nom", 
     "ON": "Onion", "OP": "Overpowered", "OCH": "Ostrich", "OR": "Oregon", "OS": "Operating System", "OT": "Oats", 
     "OU": "Outlet", "OV": "Olive", "OW": "Ow!", "OSH": "Ocean", "PA": "Pat", "PB": "Peanut Butter", 
@@ -73,16 +73,16 @@ letter_pairs_dict = {
     "UE": "Ube", "UF": "UFO", "UG": "Uggs", "UH": "U-Haul", "UI": "User Interface", "UJ": "Mt. Fuji", "UK": "UK", 
     "UL": "Umbrella", "UM": "Team oomi zoomi", "UN": "Unicorn", "UO": "Uno", "UP": "UPS", "UCH": "Urchin", "UR": "Urn", 
     "US": "US", "UT": "Unit (jacked)", "UV": "UV sunglasses", "UW": "UW", "USH": "Usher", "VA": "Van", "VB": "Volleyball", 
-    "VC": "Voicechat", "VD": "Video", "VE": "Veradee", "VF": "Venus Flytrap", "VG": "Viagra" + "\n"*50, "VH": "VHS", "VI": "Vi",
+    "VC": "Voicechat", "VD": "Video", "VE": "Veradee", "VF": "Venus Flytrap", "VG": "Viagra", "VH": "VHS", "VI": "Vi",
     "VJ": "Vidit Gujarathi", "VK": "Viking", "VL": "Vladimir Putin", "VM": "Venom", "VN": "Ms. Vincent", "VO": "Volcano", 
     "VP": "Viper", "VCH": "Voucher", "VR": "VR", "VS": "Vase", "VT": "Vulture", "VU": "Vacuum", "VW": "Volkswagen", 
     "VSH": "Viking ship", "WA": "Washington", "WB": "Web", "WC": "WC", "WD": "Wood", "WE": "We", "WF": "Wife", 
     "WG": "Wohngemeinschaft", "WH": "Whale", "WI": "Wii", "WJ": "Woojin", "WK": "Wok", "WL": "Well", "WM": "Women", 
     "WN": "Wonton", "WO": "Wolf", "WP": "Whip", "WCH": "Witch", "WR": "War", "WS": "Wasp", "WT": "Wet", "WU": "Empress Wu", 
-    "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat" + "\n"*50, "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She",
+    "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat", "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She",
     "SHF": "Sherrif", "SHG": "Shaggy", "SHH": "Shah", "SHI": "Shiny", "SHJ": "Shoji", "SHK": "Shakira", "SHL": "Shell", 
     "SHM": "Shamrock", "SHN": "Shin", "SHO": "Show", "SHP": "Sheep", "SHCH": "Schach", "SHR": "Shore", 
-    "SHS": "Schlüssel", "SHT": "Shit" + "\n"*50, "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
+    "SHS": "Schlüssel", "SHT": "Shit", "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
 }
 
 unknown = []
@@ -125,7 +125,7 @@ elif gamemode.lower() == "infinite":
     print("Separate letters by commas to select individual letter categories (e.g. b,e,m,ch).")
     letter_selection = input()
     print()
-    
+
     letter_pairs = list(letter_pairs_dict.keys())
 
     letters = []
