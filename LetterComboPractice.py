@@ -124,6 +124,8 @@ elif gamemode.lower() == "infinite":
     print("Use the format [starting letter]-[ending letter] for a range.")
     print("Separate letters by commas to select individual letter categories (e.g. b,e,m,ch).")
     letter_selection = input()
+    print()
+    
     letter_pairs = list(letter_pairs_dict.keys())
 
     letters = []
