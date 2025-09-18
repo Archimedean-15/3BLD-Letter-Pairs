@@ -77,7 +77,7 @@ letter_pairs_dict = {
     "VJ": "Vidit Gujarathi", "VK": "Viking", "VL": "Vladimir Putin", "VM": "Venom", "VN": "Ms. Vincent", "VO": "Volcano", 
     "VP": "Viper", "VCH": "Voucher", "VR": "VR", "VS": "Vase", "VT": "Vulture", "VU": "Vacuum", "VW": "Volkswagen", 
     "VSH": "Viking ship", "WA": "Washington", "WB": "Web", "WC": "WC", "WD": "Wood", "WE": "We", "WF": "Wife", 
-    "WG": "Wagon", "WH": "Whale", "WI": "Wii", "WJ": "Woojin", "WK": "Wok", "WL": "Well", "WM": "Women", 
+    "WG": "Wohngemeinschaft", "WH": "Whale", "WI": "Wii", "WJ": "Woojin", "WK": "Wok", "WL": "Well", "WM": "Women", 
     "WN": "Wonton", "WO": "Wolf", "WP": "Whip", "WCH": "Witch", "WR": "War", "WS": "Wasp", "WT": "Wet", "WU": "Empress Wu", 
     "WV": "Waves", "WSH": "Washing Machine", "SHA": "Shat" + "\n"*50, "SHB": "Shrub", "SHC": "Shack", "SHD": "Shed", "SHE": "She",
     "SHF": "Sherrif", "SHG": "Shaggy", "SHH": "Shah", "SHI": "Shiny", "SHJ": "Shoji", "SHK": "Shakira", "SHL": "Shell", 
