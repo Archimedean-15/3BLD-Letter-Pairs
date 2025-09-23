@@ -15,7 +15,7 @@ letter_pairs_dict = {
     "DB": "Dab", "DC": "Washington DC", "DE": "Dee Dee (from UCN)", "DF": "Daffodil", "DG": "Dog", "DH": "Dih", "DI": "Diddy",
     "DJ": "DJ", "DK": "Donkey Kong", "DL": "Doll", "DM": "Dam", "DN": "Daniel", "DO": "Dodo Bird", "DP": "Dude Perfect", 
     "DCH": "Ditch", "DR": "Door", "DS": "Nintendo DS", "DT": "Dot", "DU": "Duck", "DV": "Dove", "DW": "Dwarf", "DSH": "Dish",
-    "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Elf", "EG": "Egg", "EH": "Earth", "EI": "Ein Ei", 
+    "EA": "Eagle", "EB": "Ebony", "EC": "Extra Credit", "ED": "Ed Sheeran", "EF": "Effulgent Morn'", "EG": "Egg", "EH": "Earth", "EI": "Ein Ei",
     "EJ": "Ejaculate", "EK": "EKG", "EL": "Eel", "EM": "Emerald", "EN": "Enter", "EO": "Eeyore", "EP": "Epipen", "ECH": "Etch-A-Sketch",
     "ER": "ER", "ES": "Essay", "ET": "E.T.", "EU": "Europe", "EV": "Environment", "EW": "Ew!", "ESH": "Eshaan", "FA": "Fanta", "FB": "Facebook", 
     "FC": "Fifty Cent", "FD": "Fedora", "FE": "Fee", "FG": "Fog", "FH": "Fire Hydrant", "FI": "Fire", "FJ": "Footjob", "FK": "Fuck",
