@@ -85,10 +85,47 @@ letter_pairs_dict = {
     "SHS": "Schlüssel", "SHT": "Shit", "SHU": "Shoe", "SHV": "Shovel", "SHW": "Show"
 }
 
-unknown = []
+print("Enter the letter category you want to practice.")
+print("Enter \"all\" for all letter pairs.")
+print("Use the format [starting letter]-[ending letter] for a range.")
+print("Separate letters by commas to select individual letter categories (e.g. b,e,m,ch).")
+letter_selection = input()
+print()
+
+letter_pairs = list(letter_pairs_dict.keys())
+
+letters = []
+add_letter_pairs: bool = True
+
+if "-" in letter_selection:
+    dash_index = letter_selection.index("-")
+    starting_letter_uni: int = ord(letter_selection[dash_index - 1])
+    ending_letter_uni: int = ord(letter_selection[dash_index + 1])
+
+    for letter_uni in range(starting_letter_uni, ending_letter_uni + 1):
+        letters.append(chr(letter_uni))
+
+elif "," in letter_selection:
+    letters = letter_selection.split(",")
+
+elif letter_selection.lower() == "all":
+    add_letter_pairs = False
+else:
+    letters = letter_selection
+
+if add_letter_pairs:
+    new = []
+    for letter in letters:
+        for pair in letter_pairs:
+            if len(letter) == 1 and pair[0] == letter.upper() and (
+                    len(pair) == 2 or (len(pair) > 2 and pair[1] != "H")):
+                new.append(pair)
+            elif len(letter) == 2 and pair[:2] == letter.upper() and len(pair) > 2:
+                new.append(pair)
+
+    letter_pairs = new
 
 gamemode = input("Select a gamemode (infinite or memorize): ")
-print()
 
 if gamemode.lower() == "memorize":
     answer = []
@@ -97,13 +134,14 @@ if gamemode.lower() == "memorize":
     print("\n"*50)
 
     for i in range(number_of_letter_pairs):
-        pair = random.choice(list(letter_pairs_dict.keys()))
+        pair = random.choice(letter_pairs)
         print(pair)
         answer.append(pair)
+        letter_pairs.remove(pair)
         if i % 2 == 0:
             time.sleep(1)
         else:
-            time.sleep(4)
+            time.sleep(3)
         print("\n"*50)
 
     score = number_of_letter_pairs
@@ -119,44 +157,7 @@ if gamemode.lower() == "memorize":
 
 elif gamemode.lower() == "infinite":
 
-    print("Enter the letter category you want to practice.")
-    print("Enter \"all\" for all letter pairs.")
-    print("Use the format [starting letter]-[ending letter] for a range.")
-    print("Separate letters by commas to select individual letter categories (e.g. b,e,m,ch).")
-    letter_selection = input()
-    print()
-
-    letter_pairs = list(letter_pairs_dict.keys())
-
-    letters = []
-    add_letter_pairs: bool = True
-
-    if "-" in letter_selection:
-        dash_index = letter_selection.index("-")
-        starting_letter_uni: int = ord(letter_selection[dash_index - 1])
-        ending_letter_uni: int = ord(letter_selection[dash_index + 1])
-
-        for letter_uni in range(starting_letter_uni, ending_letter_uni + 1):
-            letters.append(chr(letter_uni))
-
-    elif "," in letter_selection:
-        letters = letter_selection.split(",")
-    
-    elif letter_selection.lower() == "all":
-        add_letter_pairs = False
-    else:
-        letters = letter_selection
-
-    if add_letter_pairs:
-        new = []
-        for letter in letters:
-            for pair in letter_pairs:
-                if len(letter) == 1 and pair[0] == letter.upper() and (len(pair) == 2 or (len(pair) > 2 and pair[1] != "H")):
-                    new.append(pair)
-                elif len(letter) == 2 and pair[:2] == letter.upper() and len(pair) > 2:
-                    new.append(pair)
-        
-        letter_pairs = new
+    unknown = []
 
     while True:
         pair = random.choice(letter_pairs)
