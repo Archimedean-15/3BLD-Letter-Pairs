@@ -23,7 +23,7 @@ letter_pairs_dict = {
     "FT": "Foot", "FU": "F U (flipping off)", "FV": "Five", "FW": "Flow (haircut)", "FSH": "Fish", "GA": "Gag", "GB": "Great Britain", 
     "GC": "Group Chat", "GD": "Geometry Dash", "GE": "Ghee", "GF": "Girlfriend", "GH": "Ghost", "GI": "Giant", "GJ": "Gojo", 
     "GK": "Goku", "GL": "Goal", "GM": "Gem", "GN": "Good Night", "GO": "GoGo Squeez", "GP": "Ground Pound", "GCH": "Gucci", "GR": "Grow", 
-    "GS": "Goose", "GT": "Goat", "GU": "Gukesh D.", "GV": "Guava", "GW": "Gwen Stefani", "GSH": "Goulash", "HA": "Ha ha (laughing)", "HB": "Hamburger", 
+    "GS": "Gas", "GT": "Goat", "GU": "Gukesh D.", "GV": "Guava", "GW": "Gwen Stefani", "GSH": "Goulash", "HA": "Ha ha (laughing)", "HB": "Hamburger",
     "HC": "Hi-C", "HD": "Head", "HE": "Heel", "HF": "High Five", "HG": "Hug", "HI": "Hi", "HJ": "High Jump", "HK": "Hawk Tuah",
     "HL": "Hell", "HM": "Ham", "HN": "Hen", "HO": "Hippo", "HP": "Health Points", "HCH": "Hi-Chew", "HR": "Hriday", "HS": "Highschool", 
     "HT": "Hat", "HU": "Huzz", "HV": "Heaven", "HW": "Homework", "HSH": "Hashbrowns", "IA": "Ian", "IB": "Iceberg", "IC": "Ice", 
